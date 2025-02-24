@@ -1,5 +1,6 @@
-#projects {
-  background-color: $white-color;
+#projects,
+#services {
+  background-color: #fafafa;
   color: $dark-blue-text;
   margin-top: -10rem;
   padding-top: 15rem;
@@ -17,10 +18,10 @@
     }
 
     .row {
-      margin-bottom: 8rem;
+      margin-bottom: 1rem;
 
       @include respond(phone) {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -75,4 +76,8 @@
       }
     }
   }
+}
+
+#services {
+  padding-top: 0;
 }
