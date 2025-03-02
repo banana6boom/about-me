@@ -7,9 +7,22 @@
     border: 0px;
   }
 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (width <= 600px) {
+      padding-inline: 1rem;
+      flex-direction: column;
+    }
+  }
+
   &__text {
+    display: block;
     color: darken($white-color, 50%);
     font-size: 1.3rem;
+    text-align: left;
+    margin-bottom: 1rem;
 
     a {
       color: darken($white-color, 50%);
